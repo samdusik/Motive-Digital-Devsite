@@ -1,0 +1,165 @@
+/*============Sticky Footer============*/
+
+html{
+  font-size:62.5%;
+  height:100%;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  height:100%;
+  min-height: 100%;
+  height:auto!important;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+#wrap{
+  flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  position: relative;
+  right:0;
+  -webkit-transition: right .5s;
+  -moz-transition: right .5s;
+  -o-transition: right .5s;
+  transition: right .5s;
+}
+
+.clear{clear:both;}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+.alignright,
+img.alignright {
+  float:right;
+  margin:0 0 15px 30px;
+}
+
+img.alignleft,
+.alignleft {
+  float:left;
+  margin:0 30px 15px 0;
+}
+
+img.aligncenter{
+  display: block;
+  margin:0 auto;
+}
+
+* {outline:none!important;}
+
+/*==========Fonts & Headings===========*/
+
+body{
+	font-family:$bodyfont;
+	color:$body;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+h1{
+  font-size: 40px;
+  font-size: 4rem;
+  margin:0 0 20px 0;
+}
+
+h2{
+  font-size: 40px;
+  font-size: 4rem;
+  line-height: 140%;
+  margin:0 0 20px 0;
+}
+
+h3{
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 140%;
+  margin:0 0 20px 0;
+}
+h1, h2, h3{
+  font-weight: 600;
+  font-family: $headingfont;
+}
+
+h4{
+  font-size: 22px;
+  font-size: 2.2rem;
+  margin:0 0 20px 0;
+}
+
+h5{
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin:0 0 20px 0;
+}
+
+p{
+  margin:0 0 20px 0;
+}
+
+ol,ul{
+  margin:0 0 20px 0;
+}
+
+strong{font-weight:bold}
+
+a{
+  color:$primary;
+  text-decoration:none; 
+  -webkit-transition: all 0.2s ease; 
+  -moz-transition: all 0.2s ease; 
+  -o-transition: all 0.2s ease; 
+  transition: all 0.2s ease;
+}
+
+a:visited,
+a:hover,
+a:active{
+  text-decoration:none;
+}
+
+.margin-top {
+  margin-top: 9rem;
+  @include xs {margin-top: 9rem;}
+  @include sm {margin-top: 9rem;}
+}
+
+.margin-bottom {
+  margin-bottom: 9rem;
+  @include xs {margin-bottom: 9rem;}
+  @include sm {margin-bottom: 9rem;}
+}
+
+.margin {
+ margin: 9rem 0;
+ @include xs {margin: 9rem 0;}
+ @include sm {margin: 9rem 0;}
+}
+
+.padding-top {
+   padding-top: 9rem;
+   @include xs {padding-top: 9rem;}
+   @include sm {padding-top: 9rem;}
+}
+
+.padding-bottom {
+  padding-bottom: 9rem;
+   @include xs {padding-bottom: 9rem;}
+   @include sm {padding-bottom: 9rem;}
+}
+
+.padding {
+  padding: 9rem 0;
+  @include xs {padding: 9rem 0;}
+  @include sm {padding: 9rem 0;}
+}
+
+
+

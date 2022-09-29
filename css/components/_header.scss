@@ -1,0 +1,66 @@
+/* Header
+==============================*/
+#header{
+  background: linear-gradient(179deg, rgba(65,64,66,0.38699229691876746) 100%, rgba(65,64,66,1) 100%, rgba(65,64,66,1) 100%);
+  position: relative;
+  z-index: 100;
+  top: 0;
+  right:0;
+  left:0;
+  padding: 10px;
+  
+  @include desktop{
+    padding: 30px;
+  }
+  h2{
+    margin-bottom:0;
+  }
+  a{
+    color: $bodywhite;
+  }
+  .header-logo{
+    display: flex;
+    justify-content: space-between;
+    img{
+      width:9px;
+      padding-left: 2px;
+      padding-top: 19px;
+      display: inline-block;
+    }
+  }
+}
+
+
+/* Nav
+==============================*/
+
+nav.main-menu{
+  ul{
+    padding:0; 
+    margin:0; 
+    display:inline-block; 
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    li{
+      display:inline-block; 
+      padding:0; 
+      margin:0; 
+      position:relative;
+      i{
+        font-size: 2rem;
+      }
+    }
+    .sub-menu-wrap{
+      display:none; 
+      position:absolute; 
+      white-space:nowrap; 
+      top:100%; 
+      left:0; 
+      z-index:99999; 
+      text-align:left; 
+      overflow:hidden; 
+      padding:0;
+    }
+  }
+}
