@@ -73,11 +73,6 @@ footer{
   display: flex;
   justify-content: space-between;
   padding: 10px 7.5px;
-  i{
-    font-size: 30px;
-    font-size: 3rem;
-    padding: 10px;
-  }
   .mobile-logo{
     display: flex;
     justify-content: space-between;
@@ -95,5 +90,8 @@ footer{
   align-items: center;
   li{
     margin-bottom: 20px;
+    a:hover{
+      text-decoration: underline;
+    }
   }
 }

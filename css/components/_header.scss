@@ -1,8 +1,8 @@
 /* Header
 ==============================*/
 #header{
-  background: linear-gradient(179deg, rgba(65,64,66,0.38699229691876746) 100%, rgba(65,64,66,1) 100%, rgba(65,64,66,1) 100%);
-  position: relative;
+  background: linear-gradient(179deg, rgba(65,64,66,0.7413340336134453) 100%, rgba(65,64,66,1) 100%, rgba(65,64,66,1) 100%);
+  position: absolute;
   z-index: 100;
   top: 0;
   right:0;
@@ -18,6 +18,9 @@
   a{
     color: $bodywhite;
   }
+  a:hover{
+    text-decoration: underline;
+  }
   .header-logo{
     display: flex;
     justify-content: space-between;
@@ -27,6 +30,11 @@
       padding-top: 19px;
       display: inline-block;
     }
+  }
+  i{
+    font-size: 2.5px;
+    font-size: 2rem;
+    padding: 10px;
   }
 }
 

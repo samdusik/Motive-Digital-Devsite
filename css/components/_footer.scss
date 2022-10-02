@@ -5,6 +5,64 @@
   -moz-transition: right .5s;
   -o-transition: right .5s;
   transition: right .5s;
+  background-color: $secondary;
+  color: $lightgrey;
+  a{
+    color: $lightgrey;
+  }
+  padding: 35px;
+  @include desktop{
+    padding: 75px 70px 20px 70px;
+  }
+  .footer-logo{
+    display: flex;
+    justify-content: flex-start;
+    h2{
+      font-size: 65px;
+      font-size: 6.5rem;
+      line-height: 140%;
+      margin:0 0 20px 0;
+    }
+    img{
+      width:13px;
+      padding-left: 2px;
+      padding-top: 19px;
+      display: inline-block;
+    }
+  }
+  #footer-body{
+    padding-bottom: 50px;
+    .footer-right{
+      display: flex;
+      justify-content: space-between;
+      align-items: self-start;
+      h5{
+        text-align: right;
+      }
+    }
+    #menu-main-menu-2, .social-media, .contacts{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: end;
+      li{
+        margin-bottom: 20px;
+        a{
+          font-weight:400;
+        }
+        
+      }
+    }
+    .social-media{
+      a{
+        display: inline-block;
+        margin-bottom: 16px
+      }
+    }
+    .contacts{
+      max-width: 240px;
+    }
+  }
     #footer-terms{
         font-size: 12px;
         font-size: 1.2rem;
@@ -28,10 +86,26 @@
             }
           }
         }
+        .right{
+          color: $lightgrey;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          @include desktop{
+            align-items: flex-end;
+          }
+          @include md{
+            align-items: flex-end;
+          }
+        }
+        .left{
+          a{
+            display: block;
+          }
+        }
         .site-by{
-          text-align: right;
           display: block;
-          color:$primary;
+          color: $lightgrey;
           text-decoration: none;
           &:hover{
             color:$secondary;
