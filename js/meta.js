@@ -60,3 +60,5 @@ function navToggle() {
 $(document).on('click tap', '.navToggle, .mobileNav-overlay', function (event) {
   navToggle();
 });
+
+
