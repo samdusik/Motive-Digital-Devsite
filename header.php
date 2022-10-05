@@ -44,7 +44,7 @@
           <img src="<?php bloginfo('template_directory'); ?>/images/logo.svg"/>
         </a>
         <div>
-          <a href="#" class="navToggle"><i class="fa fa-times" aria-hidden="true"></i></a>
+          <a class="navToggle"><i class="fa fa-times" aria-hidden="true"></i></a>
           <div class="clear"></div>
         </div>
       </div>

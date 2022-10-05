@@ -51,6 +51,9 @@ window.onscroll = function() {
 //Mobile Menu
 function navToggle() {
     $('#mobileNav').toggleClass('menuOpen');
+    $("#mobileNav .mobile-main-menu ul li a").on('click touch', function () {
+    navToggle();
+  });
     $('.mobileNav-overlay').toggleClass('menuOpen');
     $('#wrap').toggleClass('menuOpenWrap');
     $('#footer').toggleClass('menuOpenWrap');

@@ -13,6 +13,12 @@
       <?php elseif( get_row_layout() == 'videos_area' ): ?>
          <?php get_template_part('components/videos_area');?>
 
+      <?php elseif( get_row_layout() == 'gallery' ): ?>
+         <?php get_template_part('components/gallery');?>
+
+      <?php elseif( get_row_layout() == 'text_button' ): ?>
+         <?php get_template_part('components/text_button');?>
+
 
       <?php endif; ?>
 

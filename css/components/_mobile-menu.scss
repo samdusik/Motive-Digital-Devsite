@@ -3,11 +3,11 @@
 
 
 #mobileNav {
-  background-color: #fff;
+  background-color: $primary;
   height: 100%;
   width: 50%;
   position: fixed;
-  z-index:1000;
+  z-index:1001;
   top: 0;
   right:-50%;
   overflow-x: hidden;
@@ -17,6 +17,16 @@
   transition: all 0.5s ease;
   &.menuOpen{
     right:0;
+  }
+  #header{
+    display:none;
+  }
+  a{
+    color: $lightgrey;
+  }
+  a:hover{
+    text-decoration: none;
+    color: $tertiary;
   }
 }
 
@@ -72,7 +82,8 @@ footer{
 .mobileNav-header{
   display: flex;
   justify-content: space-between;
-  padding: 10px 7.5px;
+  align-items: center;
+  padding: 15px 7.5px;
   .mobile-logo{
     display: flex;
     justify-content: space-between;
@@ -81,6 +92,11 @@ footer{
       padding-left: 2px;
       display: inline-block;
     }
+  }
+  i{
+    font-size:2.5rem;
+    font-size:25px;
+    padding: 10px;
   }
 }
 .mobile-main-menu #menu-main-menu{
@@ -91,7 +107,7 @@ footer{
   li{
     margin-bottom: 20px;
     a:hover{
-      text-decoration: underline;
+      text-decoration: none
     }
   }
 }

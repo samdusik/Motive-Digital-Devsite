@@ -95,10 +95,11 @@ h4 {
 }
 
 h5 {
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
-  margin: 0 0 20px 0;
+  margin: 20px 0 17px 0;
+  letter-spacing: 1px;
 }
 
 p {
@@ -213,8 +214,8 @@ a:active {
 ==============================*/
 #header {
   background: linear-gradient(179deg, rgba(65, 64, 66, 0.7413340336) 100%, rgb(65, 64, 66) 100%, rgb(65, 64, 66) 100%);
-  position: absolute;
-  z-index: 100;
+  position: fixed;
+  z-index: 1000;
   top: 0;
   right: 0;
   left: 0;
@@ -222,7 +223,7 @@ a:active {
 }
 @media (min-width: 991px) {
   #header {
-    padding: 30px;
+    padding: 25px 30px 25px;
   }
 }
 #header h2 {
@@ -232,7 +233,8 @@ a:active {
   color: #FFFFFF;
 }
 #header a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #5B93BF;
 }
 #header .header-logo {
   display: flex;
@@ -284,11 +286,11 @@ nav.main-menu ul .sub-menu-wrap {
 /* Mobile Nav
 ==============================*/
 #mobileNav {
-  background-color: #fff;
+  background-color: #414042;
   height: 100%;
   width: 50%;
   position: fixed;
-  z-index: 1000;
+  z-index: 1001;
   top: 0;
   right: -50%;
   overflow-x: hidden;
@@ -296,6 +298,16 @@ nav.main-menu ul .sub-menu-wrap {
 }
 #mobileNav.menuOpen {
   right: 0;
+}
+#mobileNav #header {
+  display: none;
+}
+#mobileNav a {
+  color: #F9F9F9;
+}
+#mobileNav a:hover {
+  text-decoration: none;
+  color: #5B93BF;
 }
 
 #wrap.menuOpenWrap {
@@ -338,7 +350,8 @@ footer.menuOpenWrap {
 .mobileNav-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 7.5px;
+  align-items: center;
+  padding: 15px 7.5px;
 }
 .mobileNav-header .mobile-logo {
   display: flex;
@@ -348,6 +361,11 @@ footer.menuOpenWrap {
   width: 9px;
   padding-left: 2px;
   display: inline-block;
+}
+.mobileNav-header i {
+  font-size: 2.5rem;
+  font-size: 25px;
+  padding: 10px;
 }
 
 .mobile-main-menu #menu-main-menu {
@@ -360,7 +378,7 @@ footer.menuOpenWrap {
   margin-bottom: 20px;
 }
 .mobile-main-menu #menu-main-menu li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Woocommerce Checkout/Cart
@@ -452,15 +470,15 @@ footer.menuOpenWrap {
   transition: right 0.5s;
   background-color: #333333;
   color: #F9F9F9;
-  padding: 35px;
-}
-#footer a {
-  color: #F9F9F9;
+  padding: 35px 15px;
 }
 @media (min-width: 991px) {
   #footer {
     padding: 75px 70px 20px 70px;
   }
+}
+#footer a {
+  color: #F9F9F9;
 }
 #footer .footer-logo {
   display: flex;
@@ -472,41 +490,51 @@ footer.menuOpenWrap {
   line-height: 140%;
   margin: 0 0 20px 0;
 }
+@media (max-width: 575px) {
+  #footer .footer-logo h2 {
+    font-size: 55px;
+    font-size: 5.5rem;
+  }
+}
 #footer .footer-logo img {
   width: 13px;
   padding-left: 2px;
-  padding-top: 19px;
+  padding-top: 12px;
   display: inline-block;
 }
 #footer #footer-body {
   padding-bottom: 50px;
 }
-#footer #footer-body .footer-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: self-start;
+@media (max-width: 991px) {
+  #footer #footer-body {
+    padding-bottom: 25px;
+  }
 }
-#footer #footer-body .footer-right h5 {
-  text-align: right;
-}
-#footer #footer-body #menu-main-menu-2, #footer #footer-body .social-media, #footer #footer-body .contacts {
+#footer #footer-body #menu-main-menu-2, #footer #footer-body .social-media, #footer #footer-body #contacts {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  text-align: end;
 }
-#footer #footer-body #menu-main-menu-2 li, #footer #footer-body .social-media li, #footer #footer-body .contacts li {
-  margin-bottom: 20px;
+#footer #footer-body #menu-main-menu-2 li, #footer #footer-body .social-media li, #footer #footer-body #contacts li {
+  margin-bottom: 15px;
 }
-#footer #footer-body #menu-main-menu-2 li a, #footer #footer-body .social-media li a, #footer #footer-body .contacts li a {
+#footer #footer-body #menu-main-menu-2 li a, #footer #footer-body .social-media li a, #footer #footer-body #contacts li a {
   font-weight: 400;
 }
-#footer #footer-body .social-media a {
+@media (max-width: 991px) {
+  #footer #footer-body #menu-main-menu-2 {
+    margin-bottom: 15px;
+  }
+}
+#footer #footer-body #contacts {
+  max-width: 240px;
+}
+#footer #footer-body #contacts p {
+  margin-bottom: 15px;
+}
+#footer #footer-body a.button {
   display: inline-block;
   margin-bottom: 16px;
-}
-#footer #footer-body .contacts {
-  max-width: 240px;
 }
 #footer #footer-terms {
   font-size: 12px;
@@ -538,15 +566,8 @@ footer.menuOpenWrap {
   flex-direction: column;
   align-items: flex-start;
 }
-@media (min-width: 991px) {
-  #footer #footer-terms .right {
-    align-items: flex-end;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #footer #footer-terms .right {
-    align-items: flex-end;
-  }
+#footer #footer-terms .right p {
+  margin-bottom: 0;
 }
 #footer #footer-terms .left a {
   display: block;
@@ -557,7 +578,7 @@ footer.menuOpenWrap {
   text-decoration: none;
 }
 #footer #footer-terms .site-by:hover {
-  color: #333333;
+  color: #5B93BF;
   text-decoration: none;
 }
 
@@ -689,4 +710,67 @@ footer.menuOpenWrap {
 }
 #videos_area .block-4 {
   padding-bottom: 208px;
+}
+
+#text_button {
+  margin: 177px 0;
+}
+@media (max-width: 991px) {
+  #text_button {
+    margin: 40px 0;
+    padding: 7.5px;
+  }
+}
+#text_button .images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#text_button .images .img1 {
+  width: 25px;
+}
+@media (max-width: 575px) {
+  #text_button .images .img1 {
+    width: 18px;
+  }
+}
+#text_button .images .img2 {
+  width: 50px;
+  margin-left: 59px;
+}
+@media (max-width: 575px) {
+  #text_button .images .img2 {
+    margin-left: 40px;
+    width: 35px;
+  }
+}
+@media (min-width: 991px) {
+  #text_button .images .img2 {
+    width: 60px;
+  }
+}
+#text_button .texts {
+  padding-top: 40px;
+  padding-left: 85px;
+  color: #333333;
+}
+@media (min-width: 991px) {
+  #text_button .texts {
+    padding-left: 59px;
+  }
+}
+@media (max-width: 575px) {
+  #text_button .texts {
+    padding-left: 64px;
+  }
+}
+#text_button .texts a {
+  padding: 12px 42px;
+  background-color: #5B93BF;
+  color: #FFFFFF;
+  display: inline-block;
+  margin-top: 10px;
+}
+#text_button .texts a:hover {
+  color: #414042;
 }/*# sourceMappingURL=main.css.map */

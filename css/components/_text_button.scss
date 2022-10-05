@@ -1,0 +1,50 @@
+#text_button{
+    margin: 177px 0;
+    @include mobile{
+        margin: 40px 0;
+        padding: 7.5px;
+    }
+    .images{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .img1{
+            width:25px;
+            @include xs{
+                width:18px;
+            }
+        }
+        .img2{
+            width:50px;
+            margin-left: 59px;
+            @include xs{
+                margin-left: 40px;
+                width:35px;
+            }            
+            @include desktop{
+                width:60px;
+            }
+        }
+    }
+    .texts{
+        padding-top: 40px;
+        padding-left: 85px;
+        color: $secondary;
+        @include desktop{
+            padding-left: 59px;
+        } 
+        @include xs{
+            padding-left: 64px;
+        } 
+        a{
+            padding:12px 42px;
+            background-color: $tertiary;
+            color: $bodywhite;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        a:hover{
+            color: $primary;
+        }
+    }
+}
