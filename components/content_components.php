@@ -19,6 +19,9 @@
       <?php elseif( get_row_layout() == 'text_button' ): ?>
          <?php get_template_part('components/text_button');?>
 
+      <?php elseif( get_row_layout() == 'gallery_filterable' ): ?>
+         <?php get_template_part('components/gallery_filterable');?>
+
 
       <?php endif; ?>
 

@@ -65,3 +65,22 @@ $(document).on('click tap', '.navToggle, .mobileNav-overlay', function (event) {
 });
 
 
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  percentPosition: true,
+  masonry: {
+    columnWidth: '.grid-sizer',
+    gutter: 5
+  }
+});
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});  
+
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});

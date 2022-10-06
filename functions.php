@@ -13,6 +13,8 @@ function meta_resources() {
      wp_enqueue_style('crique_groteskbold', get_template_directory_uri() . '/css/webfonts/stylesheet.css');
      wp_enqueue_style('style', get_stylesheet_uri());
      wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '4.1.0', true );
+     wp_enqueue_script( 'isotope-js', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'), '4.1.0', true );
+     wp_enqueue_script( 'imagesloaded-js', 'https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js', array('jquery'), '4.1.0', true );
      wp_enqueue_script( 'webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.2/webfont.js', array('jquery'), '1.6.26', true );
      wp_enqueue_script( 'meta-js', get_template_directory_uri() . '/js/meta.js', array('jquery'), '1', true );
  }
