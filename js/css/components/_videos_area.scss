@@ -1,0 +1,97 @@
+#videos_area{
+    padding-top: 160px;
+    background-color: $primary;
+    color: $bodywhite;
+    h2{
+        text-transform: uppercase;
+    }
+    #video_1{
+        @include desktop{
+            position: relative;
+            z-index: 100;
+            left: -50px;
+            top: 56px;
+        }
+    }
+    .text-logo{        
+        display: flex;
+        align-items: baseline;
+        padding-top: 63px;
+        img{
+            width: 25px;
+            margin-right: 20px;
+            margin-left:30px;
+        }
+    }
+    .block-2{
+        padding-top:124px;
+        padding-bottom: 200px;
+    }
+    #video_2{
+        width: 632px;
+        height: 355px;
+    }
+    .text-logo-2{
+        display: flex;
+        align-items: baseline;
+        padding: 0 20px;
+        img{
+            width: 25px;
+            margin-right: 20px;
+            margin-left:30px;
+        }
+    }
+    #video_3{
+        width: 584px;
+        height: 320px;
+        position:relative;
+        top: -20px;
+    }
+    #video_4{
+        width: 556px;
+        height: 312px;
+        position:relative;
+        z-index:100;
+        left:-138px;
+        top:72px;
+
+    }
+    .text-logo-4, .text-logo-5{
+        display: flex;
+        align-items: baseline;
+        padding-top: 106px;
+        img{
+            width: 25px;
+            margin-right: 20px;
+        }
+        p{
+            max-width: 300px;
+        }
+    }
+    .text-logo-5{
+        padding-top:54px;
+        padding-left:70px;
+    }
+    .block-3{
+        padding-bottom: 75px;
+    }
+    #video_5{
+        width: 642px;
+        height: 360px;
+        position:relative;
+        z-index:100;
+        right:-55px;
+    }
+    .text-logo-5{
+        position: relative;
+        z-index: 100;
+        right: -56px;
+    }
+    .img-5{
+        position:relative;
+        top: 50px;
+    }
+    .block-4{
+        padding-bottom: 208px;
+    }
+}

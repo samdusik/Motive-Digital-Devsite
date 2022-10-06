@@ -1,0 +1,84 @@
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+
+
+/* ---- isotope ---- */
+
+.grid {
+    background-color: $primary;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer{
+    width:33%;
+    @include mobile{
+        width:49%;
+    }
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+//   width: 33.333%;
+    width:33%;  
+    margin-bottom: 5px;
+    @include mobile{
+        width: 49%;
+    }
+}
+
+.element-item {
+  float:left
+}
+
+.element-item img {
+  display: block;
+    width:100%;
+}
+#gallery_filterable{
+    background-color: $primary;
+    padding-bottom: 180px;
+    @include mobile{
+        padding-bottom: 80px;
+    }
+    .button-group{
+        margin-bottom:30px;
+        margin-top: 56px;
+        @include mobile{
+            margin-bottom:20px;
+            margin-top: 26px;
+        }
+        @include xs{
+            flex-direction: column;
+        }
+        display:flex;
+        justify-content: center;
+        button{
+            border:none;
+            background-color: $primary;
+            color:$lightgrey;
+            margin-right: 25px;
+            @include xs{
+                margin-right: 0px;
+                padding: 8px;
+            }
+        }  
+    }
+    hr {
+        width: 70%;
+        height: 2px;
+        margin-left: auto;
+        margin-right: auto;
+        color: $lightgrey;
+      }
+
+}
+

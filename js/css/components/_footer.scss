@@ -1,0 +1,117 @@
+#footer{
+  position: relative;
+  right:0;
+  -webkit-transition: right .5s;
+  -moz-transition: right .5s;
+  -o-transition: right .5s;
+  transition: right .5s;
+  background-color: $secondary;
+  color: $lightgrey;
+
+  padding: 35px 15px;
+  @include desktop{
+    padding: 75px 70px 20px 70px;
+  }  
+  a{
+    color: $lightgrey;
+  }
+  .footer-logo{
+    display: flex;
+    justify-content: flex-start;
+    h2{
+      font-size: 65px;
+      font-size: 6.5rem;
+      line-height: 140%;
+      margin:0 0 20px 0;
+      @include xs{
+        font-size: 55px;
+        font-size: 5.5rem;
+      }
+    }
+    img{
+      width:13px;
+      padding-left: 2px;
+      padding-top: 12px;
+      display: inline-block;
+    }
+  }
+  #footer-body{
+    padding-bottom: 50px;
+    @include mobile{
+      padding-bottom: 25px;
+    }
+    #menu-main-menu-2, .social-media, #contacts{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      li{
+        margin-bottom: 15px;
+        a{
+          font-weight:400;
+        }
+      }
+    }
+    #menu-main-menu-2{
+      @include mobile{
+        margin-bottom:15px;
+      }
+    }
+    #contacts{
+      max-width: 240px;
+      p{
+        margin-bottom: 15px;
+      }
+    }
+    a.button{
+      display: inline-block;
+      margin-bottom: 16px
+    }
+  }
+  #footer-terms{
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:$primary;
+    p{
+      margin:0;
+      .sep{
+        position: relative;
+        top:-0.5px;
+        display: inline-block;
+        padding:0 5px 0 8px;
+      }
+      a{
+        color:$primary;
+        text-decoration: none;
+        &:hover{
+          color:$secondary;
+          text-decoration: none;
+        }
+      }
+    }
+    .right{
+      color: $lightgrey;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      p{
+        margin-bottom:0;
+      }
+    }
+    .left{
+      a{
+        display: block;
+      }
+    }
+    .site-by{
+      display: block;
+      color: $lightgrey;
+      text-decoration: none;
+      &:hover{
+        color:$tertiary;
+        text-decoration: none;
+      }
+    }
+  }
+}
