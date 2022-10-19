@@ -84,3 +84,27 @@ $('.filter-button-group').on( 'click', 'button', function() {
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
 });
+
+LottieInteractivity.create({
+player:'#firstLottie',
+mode:"scroll",
+container: "#lottie-div",
+    actions: [
+    {
+        visibility:[0, 1],
+        type: "seek",
+        frames: [0, 86]
+    },
+    ]
+});
+LottieInteractivity.create({
+  player:'#secondLottie',
+  mode:"scroll",
+      actions: [
+      {
+          visibility:[0, 1],
+          type: "seek",
+          frames: [0, 69],
+      },
+      ]
+  });

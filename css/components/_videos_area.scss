@@ -1,26 +1,95 @@
 #videos_area{
-    padding-top: 160px;
     background-color: $primary;
     color: $bodywhite;
+    .first-row{
+        padding-top: 40px;
+        @include lg{
+            padding-top: 70px;
+        }
+        @include xl{
+            padding-top: 120px;
+        }
+        @include xxl{
+            padding-top: 105px;
+        }
+        #video_1{
+            @include xs{
+                text-align: center;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .row{
+        position: relative;
+        lottie-player{
+            position: absolute;
+            &#firstLottie{
+                width: 57%;
+                height: 127%;
+                position: absolute;
+                top: -124px;
+                right: 0;
+                width: 53%;
+            }
+            &#firstLottie{             
+                @include md{
+                    top: -130px;
+                    right: -45px;
+                    width: 66%;
+                    z-index:1;
+                }
+                @include lg{
+                    top: -90px;
+                    width: 71%;
+                    height: 127%;
+                    right: -42px;
+                }
+                @include xl{
+                    top: -76px;
+                    width: 72%;  
+                    height:127%;
+                }
+                @include xxl{
+                    top: -55px;
+                    width: 67%;  
+                }
+            }
+        }
+    }
     h2{
         text-transform: uppercase;
     }
     #video_1{
+        position: relative;
+        z-index: 101;
         @include desktop{
-            position: relative;
-            z-index: 100;
-            left: -50px;
+            left: -33px;
             top: 56px;
         }
     }
     .text-logo{        
         display: flex;
         align-items: baseline;
-        padding-top: 63px;
+        padding-top: 40px;
+        @include xs{
+            padding-top: 20px;
+        }
+        @include desktop{
+            padding-top: 62px;
+        }
+        p{
+            font-size: 14px;
+        }
         img{
             width: 25px;
             margin-right: 20px;
-            margin-left:30px;
+            margin-left: 15px;
+            @include xs{
+                width: 22px;
+                margin-right: 12px;
+                margin-left: 6px;
+            }
         }
     }
     .block-2{

@@ -1,11 +1,13 @@
 <div id="videos_area">
     <div class="container">
 
-        <div class="row">
-            <div class="col-12 col-lg-3">
+        <div class="row first-row">
+            <div id="lottie-div"></div>
+            <lottie-player id="firstLottie" class="d-none d-md-block" src="<?php bloginfo('template_directory'); ?>/images/lightbulb_lotty.json"></lottie-player>
+            <div class="col-12 col-lg-3 d-none d-lg-block">
                 <?php $image = get_sub_field('image_1'); $size = 'full'; if( $image ) { echo wp_get_attachment_image( $image, $size ); } ?>
             </div>
-            <div class="col-12 col-lg-4"> 
+            <div class="col-12 col-lg-6 col-xl-4"> 
                 <?php 
                 $link = get_sub_field('video_1');
                 if( $link ): 
@@ -23,13 +25,14 @@
                             <h2><?php echo get_sub_field('title_1'); ?></h2>
                         <?php endif; ?>
                         <?php if( get_sub_field('content_1') ) : ?>
-                            <?php echo get_sub_field('content_1'); ?>
+                            <p><?php echo get_sub_field('content_1'); ?></p>
                         <?php endif; ?>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row block-2 align-items-center">
+            <lottie-player id="secondLottie" class="d-none d-md-block" src="<?php bloginfo('template_directory'); ?>/images/camera_lottie.json"></lottie-player>
             <div class="col-12 col-lg-6">
                 <div class="text-logo-2">
                     <img class="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.svg"/>
@@ -132,3 +135,17 @@
 
     </div>
 </div>
+
+<!-- <script>
+LottieInteractivity.create({
+    player: '#firstLottie',
+    mode: 'scroll',
+    actions: [
+        {
+            visibility[0,1],
+            type: 'seek',
+            frames: [0, 300],
+        },
+    ]
+});
+</script> -->
