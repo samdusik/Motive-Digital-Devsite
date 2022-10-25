@@ -1,7 +1,7 @@
 <section id="gallery_filterable">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <hr>
                 <div class="button-group filter-button-group">
                 <!-- <button data-filter="*">View all</button> -->

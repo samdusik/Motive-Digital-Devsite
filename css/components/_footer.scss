@@ -68,19 +68,9 @@
     }
   }
   #footer-terms{
-    font-size: 12px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
     color:$primary;
     p{
       margin:0;
-      .sep{
-        position: relative;
-        top:-0.5px;
-        display: inline-block;
-        padding:0 5px 0 8px;
-      }
       a{
         color:$primary;
         text-decoration: none;

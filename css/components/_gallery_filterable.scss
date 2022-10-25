@@ -72,13 +72,25 @@ html { overflow-y: scroll; }
             }
         }  
     }
-    hr {
+    hr{
         width: 70%;
         height: 2px;
         margin-left: auto;
         margin-right: auto;
         color: $lightgrey;
-      }
-
+    }
 }
-
+.hidden{
+    display:none;
+}
+#load-more{
+    width: 271px;
+    height: 39px;
+    color: white;
+    background-color: $buttongrey;
+    border:none;
+    margin-top:80px;
+    @include mobile{
+        margin-top:30px;
+    }
+}

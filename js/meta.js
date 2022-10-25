@@ -85,6 +85,76 @@ $('.filter-button-group').on( 'click', 'button', function() {
   $grid.isotope({ filter: filterValue });
 });
 
+// change is-checked class on buttons
+$('.button-group').each(function(i, buttonGroup) {
+  var $buttonGroup = $(buttonGroup);
+  $buttonGroup.on('click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $(this).addClass('is-checked');
+  });
+});
+
+//****************************
+// Isotope Load more button
+//****************************
+$(document).ready(function() {
+ 
+  // init Isotope
+  var $container = $('.grid').isotope({
+      itemSelector: '.element-item',
+      //layoutMode: 'fitRows'
+  });
+
+  var initShow = 10; //number of items loaded on init & onclick load more button
+  var counter = initShow; //counter for load more button
+  var iso = $container.data('isotope'); // get Isotope instance
+
+  loadMore(initShow); //execute function onload
+
+  function loadMore(toShow) {
+  $container.find(".hidden").removeClass("hidden");
+
+  var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function(item) {
+      return item.element;
+  });
+  $(hiddenElems).addClass('hidden');
+  $container.isotope('layout');
+
+  //when no more to load, hide show more button
+  if (hiddenElems.length == 0) {
+      jQuery("#load-more").hide();
+  } else {
+      jQuery("#load-more").show();
+  };
+
+  }
+
+  //append load more button
+  $container.after('<button id="load-more">View More</button>');
+
+  //when load more button clicked
+  $("#load-more").click(function() {
+  if ($('#filters').data('clicked')) {
+      //when filter button clicked, set initial value for counter
+      counter = initShow;
+      $('#filters').data('clicked', false);
+  } else {
+      counter = counter;
+  };
+
+  counter = counter + initShow;
+
+  loadMore(counter);
+  });
+
+  //when filter button clicked
+  $("#filters").click(function() {
+  $(this).data('clicked', true);
+
+  loadMore(initShow);
+  });
+});
+
 LottieInteractivity.create({
 player:'#firstLottie',
 mode:"scroll",
@@ -97,14 +167,42 @@ container: "#lottie-div",
     },
     ]
 });
+
 LottieInteractivity.create({
   player:'#secondLottie',
   mode:"scroll",
+  container: "#lottie-div-2",
       actions: [
       {
           visibility:[0, 1],
           type: "seek",
-          frames: [0, 69],
+          frames: [0, 69]
+      },
+      ]
+  });
+
+LottieInteractivity.create({
+  player:'#thirdLottie',
+  mode:"scroll",
+  container: "#lottie-div-3",
+      actions: [
+      {
+          visibility:[0, 1],
+          type: "seek",
+          frames: [0, 92]
+      },
+      ]
+  });
+
+LottieInteractivity.create({
+  player:'#forthLottie',
+  mode:"scroll",
+  container: "#video_5",
+      actions: [
+      {
+          visibility:[0, 1],
+          type: "seek",
+          frames: [0, 62]
       },
       ]
   });

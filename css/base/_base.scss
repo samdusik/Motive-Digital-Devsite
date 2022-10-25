@@ -73,7 +73,7 @@ h1{
 h2{
   font-size: 40px;
   font-size: 4rem;
-  font-size: clamp(32px, 5vw, 40px);
+  font-size: clamp(28px, 5vw, 40px);
   line-height: 140%;
   margin:0 0 20px 0;
 }
@@ -98,7 +98,7 @@ h4{
 h5{
   font-size: 18px;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-family:$headingfont;
   margin:20px 0 17px 0;
   letter-spacing: 1px;
 }

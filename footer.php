@@ -158,7 +158,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="right">
-            <p>© <?php echo date("Y"); ?> Motive Digital &copy; all rights reserved</p>
+            <p>Motive Digital <?php echo date("Y"); ?> &copy; all rights reserved</p>
             <a href="http://www.metadigital.co.nz" class="site-by">Web Design By: <strong>MetaDigital</strong></a>
           </div>
 
