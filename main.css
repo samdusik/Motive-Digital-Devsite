@@ -74,7 +74,7 @@ h2 {
   font-size: 4rem;
   font-size: clamp(28px, 5vw, 40px);
   line-height: 140%;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 h3 {
@@ -629,7 +629,7 @@ footer.menuOpenWrap {
 }
 @media (min-width: 1400px) {
   #videos_area .first-row {
-    padding-top: 105px;
+    padding-top: 160px;
   }
 }
 @media (max-width: 575px) {
@@ -671,9 +671,9 @@ footer.menuOpenWrap {
 }
 @media (min-width: 1400px) {
   #videos_area .row lottie-player#firstLottie {
-    top: -61px;
-    width: 76%;
-    height: 143%;
+    top: -97px;
+    width: 79%;
+    height: 151%;
   }
 }
 #videos_area h2 {
@@ -731,7 +731,7 @@ footer.menuOpenWrap {
   }
 }
 #videos_area .block-2 {
-  padding-top: 103px;
+  padding-top: 113px;
   padding-bottom: 30px;
 }
 @media (max-width: 991px) {

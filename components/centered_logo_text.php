@@ -1,4 +1,4 @@
-<section id="centered_logo_text">
+<section id="centered_logo_text" id="about-us">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-1">

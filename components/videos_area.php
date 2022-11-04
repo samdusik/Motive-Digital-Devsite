@@ -4,7 +4,7 @@
         <div class="row first-row">
             <div id="lottie-div"></div>
             <lottie-player id="firstLottie" class="d-none d-lg-block" src="<?php bloginfo('template_directory'); ?>/images/lightbulb_lotty.json"></lottie-player>
-            <div class="col-12 col-lg-3 d-none d-lg-block">
+            <div class="col-12 col-lg-3 d-none d-lg-block" id="services">
                 <?php $image = get_sub_field('image_1'); $size = 'full'; if( $image ) { echo wp_get_attachment_image( $image, $size ); } ?>
             </div>
             <div class="col-12 col-lg-6 col-xl-4"> 
@@ -76,10 +76,11 @@
                         Your browser does not support the video tag.
                     </video>
             <?php endif; ?>
+            <div id="lottie-div3"></div>
             </div>
         </div>
 
-        <div class="row block-3">
+        <div class="row block-3" id="work">
             <div class="col-7 d-none d-lg-block">
                 <?php $image = get_sub_field('image_4'); $size = 'full'; if( $image ) { echo wp_get_attachment_image( $image, $size ); } ?>
             </div>

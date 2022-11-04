@@ -10,7 +10,7 @@
             padding-top: 120px;
         }
         @include xxl{
-            padding-top: 105px;
+            padding-top: 160px;
         }
         #video_1{
             @include xs{
@@ -46,9 +46,9 @@
                     right: -124px;
                 }
                 @include xxl{
-                    top: -61px;
-                    width: 76%;  
-                    height: 143%;
+                    top: -97px;
+                    width: 79%;
+                    height: 151%;
                 }
             }
         }
@@ -96,7 +96,7 @@
         }
     }
     .block-2{
-        padding-top:103px;
+        padding-top:113px;
         padding-bottom: 30px;
         @include mobile{
             padding-top: 50px;

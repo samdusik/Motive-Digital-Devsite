@@ -65,7 +65,7 @@
                 <img src="<?php bloginfo('template_directory'); ?>/images/logo.svg"/>
               </a>
           </div>
-          <div class="col-1 col-lg-4">
+          <div class="col-1 col-lg-4 col-xl-3">
               <?php wp_nav_menu( array('theme_location' => 'main-menu', 'container' => 'nav','container_class' => 'main-menu d-none d-lg-block','walker' => new megaMenu())); ?>
               <a href="#" class="navToggle d-inline-block d-lg-none"><i class="fa fa-bars" aria-hidden="true"></i></a>
           </div>
