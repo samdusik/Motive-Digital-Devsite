@@ -184,7 +184,7 @@ LottieInteractivity.create({
 LottieInteractivity.create({
   player:'#thirdLottie',
   mode:"scroll",
-  container: "#lottie-div3",
+  container: "#lottie-div-3",
       actions: [
       {
           visibility:[0, 1],

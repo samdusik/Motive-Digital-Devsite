@@ -655,7 +655,7 @@ footer.menuOpenWrap {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #videos_area .row lottie-player#firstLottie {
-    top: -54px;
+    top: -52px;
     width: 91%;
     height: 131%;
     right: -150px;
@@ -665,7 +665,7 @@ footer.menuOpenWrap {
   #videos_area .row lottie-player#firstLottie {
     top: -64px;
     width: 95%;
-    height: 141%;
+    height: 143%;
     right: -124px;
   }
 }
@@ -687,6 +687,11 @@ footer.menuOpenWrap {
   #videos_area #video_1 {
     left: -33px;
     top: 56px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #videos_area #video_1 {
+    width: 420px;
   }
 }
 @media (max-width: 991px) {
@@ -745,7 +750,7 @@ footer.menuOpenWrap {
     width: 98%;
     height: 131%;
     top: -102px;
-    left: -234px;
+    left: -220px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -941,15 +946,6 @@ footer.menuOpenWrap {
     height: auto;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  #videos_area #video_5 {
-    width: 471px;
-    height: auto;
-    position: relative;
-    z-index: 100;
-    right: -55px;
-  }
-}
 @media (min-width: 991px) {
   #videos_area #video_5 {
     width: 642px;
@@ -957,6 +953,15 @@ footer.menuOpenWrap {
     position: relative;
     z-index: 100;
     right: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #videos_area #video_5 {
+    width: 471px;
+    height: auto;
+    position: relative;
+    z-index: 100;
+    right: -55px;
   }
 }
 @media (min-width: 1400px) {
@@ -990,24 +995,24 @@ footer.menuOpenWrap {
 @media (min-width: 992px) and (max-width: 1199px) {
   #videos_area .block-4 #forthLottie {
     left: -83px;
-    height: 133%;
-    top: -281px;
-    width: 91%;
-    height: 163%;
+    /* height: 133%; */
+    top: -248px;
+    width: 83%;
+    height: 155%;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   #videos_area .block-4 #forthLottie {
-    left: -125px;
+    left: -143px;
     height: 120%;
-    top: -177px;
+    top: -168px;
   }
 }
 @media (min-width: 1400px) {
   #videos_area .block-4 #forthLottie {
     left: -208px;
     height: 117%;
-    top: -149px;
+    top: -136px;
   }
 }
 

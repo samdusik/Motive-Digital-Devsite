@@ -58,9 +58,7 @@
                             Your browser does not support the video tag.
                         </video>
                 <?php endif; ?>
-            </div>
-            <div id="lottie-div-3"></div>
-            
+            </div>    
         </div>
 
         <div class="row block-2_2 justify-content-start d-none d-lg-block">
@@ -76,8 +74,8 @@
                         Your browser does not support the video tag.
                     </video>
             <?php endif; ?>
-            <div id="lottie-div3"></div>
             </div>
+            <div id="lottie-div-3"></div>
         </div>
 
         <div class="row block-3" id="work">
